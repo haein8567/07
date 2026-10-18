@@ -1,15 +1,9 @@
 #include <stdio.h>
-void f(void);
+void sub(void);
 
-int i;
 int main(void) {
-    for (i=0; i<5; i++) {
-        f();
-    }
+    int i;
+    for(i=0;i<3;i++)
+    sub();
     return 0;
-}
-
-void f(void) {
-    for (i=0;i<10;i++)
-    printf("#");
 }
